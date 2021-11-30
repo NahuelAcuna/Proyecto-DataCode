@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataCode - Una mini wiki</title>
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/mQuery.css">
+</head>
+<body>
+    <div class="contacto-grid">
+        <!-- Comienzo del header -->
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+        </div>
+        <div class="burger-menu">
+            <img src="../img/menu.svg" alt="menu-icon">
+        </div>
+        <nav>
+            <li><a href="../index.html"><span class="wh">&lt</span>Inicio<span class="wh">></span></a></li>
+            <li><a href="html.html"><span class="wh">&lt</span>HTML<span class="wh">></span></a></li>
+            <li><a href="css.html"><span class="wh">&lt</span>CSS<span class="wh">></span></a></li>
+            <li><a href="python.html"><span class="wh">&lt</span>PYTHON<span class="wh">></span></a></li>
+            <li><a href="#" class="active"><span class="wh">&lt</span>Contacto<span class="wh">></span></a></li>
+        </nav>
+        <!-- Fin del header -->
+
+        <!-- Comiendo del main -->
+        <main class="contacto">
+            <section>
+                <div class="contacto-title">
+                    <h3>¡CONTACTAME!</h3>
+                    <p>Si queres realizar un aporte, o tenes alguna consulta con respecto al contenido de mi sitio, ¡completá el formulario y lo analizamos en conjunto!</p>
+                    <p>También podes encontrarme en mis <a href="#footer">redes sociales</a></p>
+                </div>
+                <div class="contacto-form">
+                    <form action="" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="user_nombre" id="nombre" required>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="user_apellido" id="apellido" required>
+                        <label for="email">Correo:</label>
+                        <input type="email" name="user_email" id="email" required>
+                        <label for="consulta">Consulta:</label>
+                        <textarea name="user_consulta" id="consulta" cols="30" rows="10" maxlength="30" required></textarea>
+                        <input class="enviar" type="submit" value="Enviar">
+                    </form>
+                </div> 
+            </section>
+        </main>
+        <!-- Fin del main -->
+
+        <!-- Comienzo del footer -->
+        <footer>
+            <div>
+                <p>Hecho por Nahuel Acuña, todos los derechos reservados.</p>
+                <div class="redes" id="redes">
+                    <a href="https://instagram.com/" target="_blank"><img src="../img/instagram.png" alt="instagram_logo" width="50px"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="../img/twitter.png" alt="twitter_logo" width="50px"></a>
+                    <a href="https://linkedin.com/" target="_blank"><img src="../img/linkedin.png" alt="linkedin_logo" width="50px"></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Fin del footer -->
+    </div>
+</body>
+</html>
