@@ -16,7 +16,7 @@ body {
     color: white;
 }
 .active {
-    color: #39399B;
+    color: #39399B !important;
 }
 .active:hover {
     color: #03C903;
@@ -129,6 +129,8 @@ nav li a {
 }
 .banner_logos img {
     width: 300px;
+    animation-name: animation2;
+    animation-duration: .5s;
 }
 .banner_title {
     width: 60%;
@@ -182,6 +184,8 @@ nav li a {
     transition: all 1s;
     /* background: linear-gradient(#09404F, #0e4c5e); */ 
     border: 1px #28094F solid;
+    animation-name: animation;
+    animation-duration: .5s;
 }
 .languages-grid article:hover {
     background-color: #1e6477;
@@ -375,6 +379,19 @@ aside {
 /* Fin contacto */
 
 
+/* Inicio KeyFrames */
+@keyframes animation {
+    0% {opacity: 0;
+    transform: translatey(-36px);}
+    25% {opacity: 0.25;
+    transform: translatey(27px);}
+    50% {opacity: 0.5;
+    transform: translatey(-18px);}
+    75% {opacity: 0.75;
+    transform: translatey(-9px);}
+    80% {opacity: 1;
+    transform: translatey(0px);}
+}
 @keyframes animation2 {
     0% {transform: translatex(-50px);}
     25% {transform: translatex(-40px);}
@@ -382,3 +399,4 @@ aside {
     75% {transform: translatex(-20px);}
     80% {transform: translatex(-10px);}
 }
+/* Fin KeyFrames */
