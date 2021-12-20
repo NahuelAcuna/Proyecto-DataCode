@@ -1,0 +1,98 @@
+@media only screen and (max-width: 768px) and (min-width:0) {
+    /* Inicio GRIDS */
+    .index-grid {
+        display: grid;
+        grid-template-areas: 
+            "logo nav"
+            "banner banner"
+            "lang lang"
+            "sugg sugg"
+            "foot foot";
+        grid-template-rows: 100px auto auto auto auto;
+        /* grid-template-columns: 20% auto 10%; */
+    }
+    .languages-grid {
+        display: grid;
+        grid-template-areas: 
+        "item item"
+        "item item"
+        "item item";
+        width: 85%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .lang-grid {
+        display: grid;
+        grid-template-areas: 
+        "logo nav"
+        "aside aside"
+        "main main"
+        "sugg sugg"
+        "foot foot";
+        grid-template-rows: 100px auto auto auto auto;
+    }
+    .contacto-grid {
+        display: grid;
+        grid-template-areas:
+        "logo nav"
+        "contac contac"
+        "foot foot";
+        grid-template-rows: 100px auto auto auto auto;
+    }
+    /* Fin GRIDS */
+
+
+
+    /* Inicio HEADER */
+    .burger-menu {
+        grid-area: nav;
+        visibility: visible;
+        display: block;
+        background-color: rgba(0, 33, 43, 0.8);
+    }
+    .burger-menu img {
+        width: 60px;
+        float: right;
+        margin: 6% 6% 0% 0%;
+    }
+    .burger-menu img:hover {
+        transform: rotate(180deg);
+        transition: 1.5s; 
+    }
+    .submenu {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        right: -100%;
+        background-color: #00212b;
+        top: 100px;
+        transition: all .5s;
+    }
+    .chequeable input {
+        display: none;
+    }
+    .burger-menu input:checked ~ .submenu {
+        right: 0;
+        visibility: visible;
+        display: block;
+        position: absolute;
+    }
+    .submenu li {
+        list-style-type: none;
+        padding: 15px;
+        text-align: center;
+    }
+    .submenu li:hover {
+        background-color: #032e3bcc;
+    }
+    .submenu li a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 30px;
+        color: #03C903;;
+    }
+    nav {
+        visibility: hidden;
+    }
+    /* Fin HEADER */
+}

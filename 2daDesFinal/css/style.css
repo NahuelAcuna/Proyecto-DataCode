@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*'Bebas Neue', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap'); /*'Secular One', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #002b36;
+    color: #e3e8e9;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    padding: 5px;
+    background-color: rgba(0, 33, 43, 0.8);
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    width: 100%;
+}
+.logo {
+    width: 400px;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1400px;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+}
+header nav li {
+    list-style-type: none;
+    margin: 5px;
+}
+header nav li a {
+    text-align: center;
+    text-decoration: none;
+    color: #03C903;
+    padding: 15px;
+    font-size: 30px;
+}
+/* Fin header */
+
+
+
+/* Inicio main */
+.banner {
+    background-image: url("../img/banner.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.banner_logos img {
+    width: 400px;
+    height: auto;
+}
+ .banner_logos {
+    margin: 120px 30px 0px 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/*
+.banner_logos img {
+    margin: 30px;
+} */
+.banner_title {
+    flex-wrap: wrap;   
+    text-align: center;
+    padding: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.banner_title h1 {
+    font-size: 80px;
+    margin-top: 100px;
+    
+}
+.banner_title p {
+    text-align: justify;
+    margin: 40px 0px 0px 400px;
+}
+
+.languages-grid article {
+    animation-name: efecto;
+    animation-duration: 3s;
+}
+.languages h2 {
+    font-size: 60px; 
+    text-align: center; 
+    padding: 15px; 
+    text-decoration: underline;
+}
+.languages div {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.languages div article {
+    width: 33%;
+    height: 300px;
+    background-color: #09404F;
+    transition: all 1s;
+    /* background: linear-gradient(#09404F, #0e4c5e); */
+    border: 1px #28094F solid;
+}
+.languages div article:hover {
+    background-color: #1e6477;
+}
+.languages div article div {
+    margin: 0 auto;
+    width: 50%;
+}
+.languages div article a img {
+    width: 200px;
+}
+.languages div article h5 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Secular One', sans-serif;
+}
+/* sobre mouse #144654 */
+
+.index_suggest {
+    /* background-color: #00212b; */
+    background-color: #032934;
+    margin: 30px 0 30px 0;
+    padding: 20px;
+    text-align: center;
+    border: 1px black dotted;
+}
+.index_suggest h3 {
+    font-size: 40px;
+    color: #1D973B;
+}
+.index_suggest p {
+    font-size: 18px;
+}
+.index_suggest p a {
+    text-decoration: none;
+    /* color: #2E2D98; */
+    color: #39399B;
+}
+/* Fin main */
+
+
+
+/* Inicio footer */
+.footer {
+    background-color: #00212b;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.redes {
+    margin: 10px 0px 0px 0px;
+}
+.redes a {
+    margin: 0px 10px 0px 10px;
+}
+/* Fin footer */
+
+
+
+/* SPANS */
+.wh {
+    color: white;
+}
+/* fin SPANS */
+
+
+
+/* Inicio main background */
+body {
+    background-color: #09262e;
+    /* background-color: #4c4177; */
+    /* background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%); */
+}
+.main-leng {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #002b36;
+    padding: 30px;
+}
+.fix {
+    position: relative;
+    border-bottom: 2px solid #00212b;
+}
+/* Fin main background */
+
+
+
+/* Inicio contenido lenguajes */
+.main-leng aside {
+    display: inline-block;
+    width: 20%px;
+    background-color: #043341;
+    font-family: 'Courier New', Courier, monospace;
+}
+.indice {
+    padding: 30px;
+}
+.indice p {
+    color: #36a5c7;
+}
+.indice ul {
+    list-style-type:square;
+}
+.indice ul li a{
+    color: #7a01b3;
+    text-decoration: none;
+}
+.main-leng-container {
+    display: inline-block;
+    width: 80%;
+    padding: 50px;
+}
+.main-leng-container div {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+}
+.main-leng-container div img {
+    width: 200px;
+}
+.main-leng-container h2 {
+    text-align: center;
+    font-size: 80px;
+    margin: 20px;
+}
+.main-leng-container h4 {
+    font-size: 20px;
+    color: #7a01b3;
+}
+.main-leng-container iframe {
+    width: 100%;
+}
+/* Fin contenido lenguajes */
+
+
+
+/* Inicio contacto */
+.contacto {
+    padding: 5%;
+}
+.contacto section {
+    background-color: #002b36;
+    padding: 60px;
+}
+.contacto-title {
+    text-align: center;
+    padding: 20px;
+}
+.contacto-title h3 {
+    font-size: 60px;
+    color: #7a01b3;
+    margin: 10px;
+}
+.contacto-title p {
+    font-size: 18px;
+}
+.contacto-title p a {
+    text-decoration: none;
+    color: #1D973B;
+}
+
+
+.contacto-form form {
+    width: 400px;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contacto-form form label {
+    display: inline-block;
+    width: 20%;
+    margin: 5px;
+}
+.contacto-form form input {
+    display: inline-block;
+    width: 74%;
+    background-color: #063541;
+    color: #1D973B;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contacto-form textarea {
+    width: 400px;
+    background-color: #063541;
+    color: #1D973B;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contacto-form .enviar {
+    width: 101%;
+    height: 50px;
+    background-color: #330647;
+    color: white;
+    font-size: 20px;
+}
+/* Fin contacto */
+
+
+
+
+
+/* Inicio KeyFrames */
+@keyframes efecto {
+    0% {opacity: 0;
+    transform: translatey(-36px);}
+    25% {opacity: 0.25;
+    transform: translatey(27px);}
+    50% {opacity: 0.5;
+    transform: translatey(-18px);}
+    75% {opacity: 0.75;
+    transform: translatey(-9px);}
+    80% {opacity: 1;
+    transform: translatey(0px);}
+}
+/* Fin KeyFrames */

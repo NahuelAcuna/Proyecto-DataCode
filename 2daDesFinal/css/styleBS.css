@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*'Bebas Neue', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap'); /*'Secular One', sans-serif;*/
+
+.wh {
+    color: white;
+}
+
+
+
+/* Cambios BootStrap */
+.nav-link {
+    color:  #03C903 !important;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.nav-link:hover {
+    color: #39399B !important;
+    transition: .8s;
+}
+.active {
+    color: #39399B !important;
+}
+.navbar-collapse {
+    justify-content: right;
+}
+.col-lg-12 {
+    padding: 0px !important;
+}
+.main-index {
+    background-color: #002b36;
+    padding-bottom: 2em;
+}
+.main-index-row {
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding-bottom: 2rem;
+}
+.main-index h2 {
+    font-size: 60px; 
+    text-align: center; 
+    padding: 2.5rem; 
+    text-decoration: underline;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Fin BootStrap */
+
+
+
+
+/* Inicio BANNER */
+.banner {
+    grid-area: banner;
+    background-image: url("../img/banner.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+ .banner_logos {
+    width: 40%;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.banner_logos img {
+    width: 300px;
+    animation-name: animation2;
+    animation-duration: .5s;
+}
+.banner_title {
+    width: 60%;
+    padding: 5%;
+    overflow: hidden;
+    flex-wrap: wrap;  
+    justify-content: center; 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.banner_title h1 {
+    padding-left: 50px;
+    font-size: 4rem;
+    text-align: left;
+}
+.banner_title p {
+    text-align: justify;
+    padding-left: 10%;
+}
+/* Fin BANNER */
+
+
+
+
+/* Inicio opciones */
+.languages-grid {
+    /* width: 300px !important; */
+    height: 300px;
+    background-color: #09404F;
+    transition: all 1s;
+    /* background: linear-gradient(#09404F, #0e4c5e); */ 
+    border: 1px #28094F solid;
+    animation-name: animation;
+    animation-duration: .5s;
+    color: #fff;
+}
+.languages-grid:hover {
+    background-color: #1e6477;
+}
+.languages-grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.languages-grid a img {
+    width: 200px;
+}
+.languages-grid h5 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Secular One', sans-serif;
+}
+/* Fin opciones */
+
+
+
+
+/* Inicio SUGGEST */
+.index_suggest {
+    /* background-color: #00212b; */
+    background-color: #032934;
+    margin: 30px 0 0 0;
+    padding: 20px;
+    text-align: center;
+    border: 2px black dotted;
+    color: #fff;
+}
+.index_suggest h3 {
+    font-size: 40px;
+    color: #1D973B;
+}
+.index_suggest p {
+    font-size: 18px;
+}
+.index_suggest p a {
+    text-decoration: none;
+    /* color: #2E2D98; */
+    color: #39399B;
+}
+/* Fin SUGGEST */
+
+
+/* Inicio FOOTER  */
+footer {
+    grid-area: foot;
+    width: 100%;
+    background-color: #00212b;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+footer div {
+    margin: 1rem;
+}
+footer p {
+    font-size: 1.5em;
+}
+.redes {
+    margin: 10px 0px 0px 0px;
+}
+.redes a {
+    margin: 0px 20px 0px 20px;
+}
+/* Fin FOOTER */
+
+
+
+
+/*Inicio contacto*/
+.contacto section {
+    background-color: #002b36;
+    padding: 60px;
+    color: #fff;
+}
+.contacto-title {
+    text-align: center;
+    padding: 20px;
+}
+.contacto-title h3 {
+    font-size: 60px;
+    color: #7a01b3;
+    margin: 10px;
+}
+.contacto-title p {
+    font-size: 18px;
+}
+.contacto-title p a {
+    text-decoration: none;
+    color: #1D973B;
+}
+.contacto-form form {
+    width: 400px;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contacto-form form label {
+    display: inline-block;
+    width: 20%;
+    margin: 5px;
+}
+.contacto-form form input {
+    display: inline-block;
+    width: 74%;
+    background-color: #063541;
+    color: #1D973B;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contacto-form textarea {
+    width: 400px;
+    background-color: #063541;
+    color: #1D973B;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contacto-form .enviar {
+    width: 101%;
+    height: 50px;
+    background-color: #330647;
+    color: white;
+    font-size: 20px;
+}
+/* Fin contacto */
+
+
+
+
+
+@media only screen and (max-width: 768px) and (min-width:0) {
+    .banner_logos {
+        display: none;
+        visibility: none;
+    }
+    .banner_title {
+        width: auto;
+    }
+}
