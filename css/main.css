@@ -41,6 +41,9 @@
 
 /*Fin bootstrap*/
 /*Inicio banner*/
+.wh {
+  color: #fff; }
+
 .banner {
   grid-area: banner;
   background-image: url("../img/banner.jpg");
@@ -82,28 +85,22 @@
 
 /*Fin banner*/
 /*Inicio opciones*/
-.languages-grid {
-  height: 300px;
-  background-color: #09404F;
-  transition: all 1s;
-  /* background: linear-gradient(#09404F, #0e4c5e); */
-  border: 1px #28094F solid;
-  animation-name: animation;
-  animation-duration: .5s;
-  color: #fff; }
-  .languages-grid:hover {
-    background-color: #1e6477; }
-  .languages-grid div {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .languages-grid a img {
-    width: 200px; }
-  .languages-grid h5 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 40px;
-    font-family: "Secular One", sans-serif; }
+.languages-grid:hover, .languages-grid-js:hover, .languages-grid-react:hover, .languages-grid-node:hover {
+  background-color: #1e6477; }
+
+.languages-grid div, .languages-grid-js div, .languages-grid-react div, .languages-grid-node div {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.languages-grid a img, .languages-grid-js a img, .languages-grid-react a img, .languages-grid-node a img {
+  width: 200px; }
+
+.languages-grid h5, .languages-grid-js h5, .languages-grid-react h5, .languages-grid-node h5 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 40px;
+  font-family: "Secular One", sans-serif; }
 
 /*Fin opciones*/
 /*Inicio suggest*/
@@ -144,3 +141,59 @@ footer {
     margin: 0px 20px 0px 20px; }
 
 /*Fin footer*/
+/*Inicio Mixin*/
+.languages-grid, .languages-grid-js, .languages-grid-react, .languages-grid-node {
+  height: 300px;
+  background-color: #09404F;
+  transition: all 1s;
+  border: 1px #28094F solid;
+  animation-name: animation;
+  animation-duration: .5s;
+  color: #03C903 !important; }
+
+/*Fin Mixin*/
+/*Inicio MAP*/
+.languages-grid-html {
+  background-color: #09404F; }
+
+.languages-grid-css {
+  background-color: #114d5e; }
+
+.languages-grid-python {
+  background-color: #185566; }
+
+/*Fin MAP*/
+/*Inicio Extend*/
+.languages-grid-js {
+  background-color: #09404F; }
+
+.languages-grid-react {
+  background-color: #114d5e; }
+
+.languages-grid-node {
+  background-color: #185566; }
+
+/*Fin Extend*/
+@media only screen and (max-width: 768px) {
+  .banner_logos {
+    display: none;
+    visibility: none; }
+  .banner_title {
+    width: auto; }
+  .navbar-brand img {
+    width: 200px; }
+  .banner_title {
+    width: 80%;
+    padding: 0px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace; }
+    .banner_title h1 {
+      padding: 0px;
+      font-size: 3.5rem;
+      text-align: left; }
+    .banner_title p {
+      text-align: right;
+      padding-left: 10%; } }
