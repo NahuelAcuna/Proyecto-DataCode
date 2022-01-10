@@ -8,37 +8,52 @@
     <meta name="keywords" content="HTML, DATACODE, wiki html, tutorial html, guia html, etiquetas, diseño, maquetacion">
     <meta name="description" content="HTML es un lenguaje de marcado de etiquetas que nos ayuda a definir la estructura de nuestro sitio web.">
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
-    <link rel="stylesheet" href="../css/grid.css">
-    <link rel="stylesheet" href="../css/mQuery.css">
+    <!-- <link rel="stylesheet" href="../css/grid.css"> -->
+    <!-- <link rel="stylesheet" href="../css/mQuery.css"> -->
+    <link rel="stylesheet" href="../css/bs/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../liveupdate.js"></script>
 </head>
 <body>
-    <div class="lang-grid">
-        <!-- Comienzo del header -->
-        <div class="logo">
-            <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+    <!-- Inicio header -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00212b; width: 100% !important;">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>            
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #073747;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="../index.html"><span class="wh">&lt</span>INICIO<span class="wh">></span></a>
+                            <a class="nav-link active" href="html.html"><span class="wh">&lt</span>HTML<span class="wh">></span></a>
+                            <a class="nav-link" href="css.html"><span class="wh">&lt</span>CSS<span class="wh">></span></a>
+                            <a class="nav-link" href="construccion.html"><span class="wh">&lt</span>PYTHON<span class="wh">></span></a>
+                            <a class="nav-link" href="contacto.html"><span class="wh">&lt</span>CONTACTO<span class="wh">></span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-        <div class="burger-menu">
-            <img src="../img/menu.svg" alt="menu-icon">
-        </div>
-        <nav>
-            <li><a href="../index.html"><span class="wh">&lt</span>Inicio<span class="wh">></span></a></li>
-            <li><a href="#" class="active"><span class="wh">&lt</span>HTML<span class="wh">></span></a></li>
-            <li><a href="css.html"><span class="wh">&lt</span>CSS<span class="wh">></span></a></li>
-            <li><a href="python.html"><span class="wh">&lt</span>PYTHON<span class="wh">></span></a></li>
-            <li><a href="contacto.html"><span class="wh">&lt</span>Contacto<span class="wh">></span></a></li>
-        </nav>
-        <!-- Fin del header -->
+    </div>
+    <!-- Fin header -->
 
-        <!-- Comiendo del main -->
+    <!-- Comiendo del main -->
+    <div class="container-fluid lang-grid">
         <aside>
             <div class="indice">
                 <p>Indice:</p>
                 <ul>
-                    <li><a href="">Introducción</a></li>
-                    <li><a href="">Base HTML</a></li>
-                    <li><a href="">Etiquetas</a></li>
-                    <li><a href="">Elementos</a></li>
-                    <li><a href="">Atributos</a></li>
+                    <li><a href="#" onclick="abrirUrl('html.html','main-leng-container')">Introducción</a></li>
+                    <li><a href="#" onclick="abrirUrl('sintaxis.html','main-leng-container')">Sintaxis</a></li>
+                    <li><a href="#" onclick="abrirUrl('semantica.html','main-leng-container')">Etiquetas emánticas</a></li>
+                    <li><a href="construccion.html">Elementos</a></li>
+                    <li><a href="construccion.html">Atributos</a></li>
                     <li><a href="">...</a></li>
                     <li><a href="">...</a></li>
                     <li><a href="">...</a></li>
@@ -46,6 +61,23 @@
                     <li><a href="">...</a></li>
                 </ul>
             </div>
+            <label class="indice-resp">
+                <p>Indice:</p>
+                <input type="checkbox" name="menu">
+                <img src="../img/menu.svg" alt="menu">
+                <div class="submenu">
+                    <li><a href="#" onclick="abrirUrl('html.html','main-leng-container')">Introducción</a></li>
+                    <li><a href="#" onclick="abrirUrl('sintaxis.html','main-leng-container')">Sintaxis</a></li>
+                    <li><a href="#" onclick="abrirUrl('semantica.html','main-leng-container')">Semántica</a></li>
+                    <li><a href="#">Elementos</a></li>
+                    <li><a href="#">Atributos</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href="">...</a></li>
+                </div>
+            </label>
         </aside>
         <main class="main-leng-container">
             <div>
@@ -53,31 +85,62 @@
             </div>
             <h2>HTML</h2>
             <H4><em>HyperText Markup Language</em></H4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, ipsam nobis! Deleniti, reprehenderit perferendis aut itaque expedita est, corrupti illum quae explicabo ab dolore exercitationem fuga harum alias veniam repudiandae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis adipisci aperiam impedit sint reiciendis quae consectetur eius nisi dolorem enim nemo fugit aut ad, praesentium nam error, cum perspiciatis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, accusamus. At culpa, architecto qui sint earum, velit eveniet ipsum corporis voluptate repellat alias, eum est tempora inventore vel possimus cumque.</p>
-
-            <p>¿Querés un video tutorial? Te recomiendo el siguiente:</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <p>HTML (HyperText Markup Language) es, según sus siglas en inglés, un lenguage de marcado de hipertexto. ¿Qué es esto? Bueno, basicamente nos ayuda a generar nuestra estructura básica de nuestro sitio web y el contenido que será mostrado al público.</p>
+            <p>- ¿Qué es exactamente lo que definimos? En el HTML generamos las <strong>etiquetas</strong> que indicarán el orden en el que estará distribuido nuestro sitio web, dentro de ellas, definimeros nuestro texto legible para posteriormente ser modificado y estilado con <em>CSS</em> utilizando dichas etiquetas.</p>
+            <p>- ¿Esto quiere decir que HTML no da estilos al sitio? Exactamente. Una vez generado el contenido y la estructura del sitio, pasaremos a brindar estilos, apariencia, etc con CSS.</p>
+            <br>
+            <h5><em>Bien, arranquemos con un poco de HTML:</em></h5>
+            <p>Ya teniendo en cuenta que definiremos etiquetas y que deben mantener un orden para respetar y conseguir esa estructura básica, pasemos a ver como se realiza.</p>
+            <p>La estructura básica es como una noticia la cual contiene un titulo, cuerpo y pie de página. Nosotros a esto lo definimos como <em>Header, container y footer</em> como ya podran haber visto en casi todos los sitios webs que existen.</p>
+            <div class="code">
+                <span class="mm">&lt!</span><span class="et">DOCTYPE </span><span class="at">html</span><span class="mm">></span><br>
+                <span class="mm">&lt</span><span class="et">html </span><span class="at">lang=</span><span class="vl">"en"</span><span class="mm">></span><br>
+                <span class="mm">&lt</span><span class="et">head</span><span class="mm">></span><br>
+                <span class="mm">&nbsp&nbsp&nbsp&lt</span><span class="et">meta </span><span class="at">charset=</span><span class="vl">"UTF-8"</span><span class="mm">></span><br>
+                <span class="mm">&nbsp&nbsp&nbsp&lt</span><span class="et">meta </span><span class="at">http-equiv=</span><span class="vl">"X-UA-Compatible" </span><span class="at">content=</span><span class="vl">"IE=edge"</span><span class="mm">></span><br>
+                <span class="mm">&nbsp&nbsp&nbsp&lt</span><span class="et">meta </span><span class="at">name=</span><span class="vl">"viewport" </span><span class="at">content=</span><span class="vl">"width=device-width, initial-scale=1.0"</span><span class="mm">></span><br>
+                <span class="mm">&nbsp&nbsp&nbsp&lt</span><span class="et">title</span><span class="mm">></span><span class="tx">Hola Mundo!</span><span class="mm">&lt</span><span class="et">title</span><span class="mm">></span><br>
+                <span class="mm">&lt/</span><span class="et">head</span><span class="mm">></span><br>
+                <span class="mm">&lt</span><span class="et">body</span><span class="mm">></span><br>
+                <br><br>
+                <span class="mm">&lt/</span><span class="et">body</span><span class="mm">></span><br>
+                <span class="mm">&lt/</span><span class="et">html</span><span class="mm">></span><br>
+                <!-- <span class="mm">&lt</span><span class="mm">></span><br> -->
+            </div>
+            <p>Teniendo en cuenta la estructura brindada, paso a explicar: La primera etiqueta inicial define que trabajaremos sobre un documento <strong>HTML</strong>.</p>
+            <p>Luego comienza la etiqueta <strong>HEAD</strong>, todo lo que se contiene dentro de esta etiqueta no es visible para el usuario y se utiliza para definir parámetros con los cuales se construye el sitio web, ej: Linkear nuestro CSS, JS, titulos, palabras claves, idiomas, etc.</p>
+            <p>Ahora comienza <strong><em>BODY</em></strong>, dentro de esta etiqueta es con la que más trabajaremos ya que es en la que definimos todo nuestro contenido visible para el cliente y la que luego, con cada etiqueta, aplicaremos los estilos.</p>
+            <p>- Ahora, seguro te preguntarás, ¿donde está el "pie" del sitio? Bueno, dentro de nuestro body se utilizarán etiquetas <a href="semanticas.html"><em>semánticas</em></a> que ayudaran a definir la estructura que anteriormente mencioné. Estas son: <strong>header, main y footer</strong>.</p>
+            <p>Con esta base ya podes comenzar a trabajar con HTML, pero antes, te recomiendo ver como es la <a href="sintaxis.html">sintaxis</a> de HTML y poder continuar con este gran curso!</p>
+            <br><br><br>
+            <p style="text-align: center; font-size: 1.2em;">¿Querés un video tutorial completo? Te recomiendo el siguiente:</p>
+            <div class="iframes">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </main>       
-        <div class="index_suggest">
+        <div class="index_suggest" style="margin: 0;">
             <h3>¿Tenés alguna sugerencia?</h3>
             <p>¡No dudes en contactarme por la web o mis redes sociales!</p>
         </div>
-        <!-- Fin del main -->
-
-        <!-- Comienzo del footer -->
-        <footer>
-            <div>
-                <p>Hecho por Nahuel Acuña, todos los derechos reservados.</p>
-                <div class="redes" id="redes">
-                    <a href="https://instagram.com/" target="_blank"><img src="../img/instagram.png" alt="instagram_logo" width="50px"></a>
-                    <a href="https://twitter.com/" target="_blank"><img src="../img/twitter.png" alt="twitter_logo" width="50px"></a>
-                    <a href="https://linkedin.com/" target="_blank"><img src="../img/linkedin.png" alt="linkedin_logo" width="50px"></a>
-                </div>
-            </div>
-        </footer>
-        <!-- Fin del footer -->
     </div>
+    <!-- Fin del main -->
+
+    <!-- Comienzo del footer -->
+    <div class="container-fluid">
+        <div class="row">
+            <footer>
+                <div>
+                    <p>Hecho por Nahuel Acuña, todos los derechos reservados.</p>
+                    <div class="redes" id="redes">
+                        <a href="https://instagram.com/" target="_blank"><img src="../img/instagram.png" alt="instagram_logo" width="50px"></a>
+                        <a href="https://twitter.com/" target="_blank"><img src="../img/twitter.png" alt="twitter_logo" width="50px"></a>
+                        <a href="https://linkedin.com/" target="_blank"><img src="../img/linkedin.png" alt="linkedin_logo" width="50px"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Fin del footer -->
 </body>
 </html>

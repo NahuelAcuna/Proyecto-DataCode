@@ -137,6 +137,7 @@ $font-4: 'Secular One', sans-serif;
 /*Inicio suggest*/
 .index_suggest {
     /* background-color: #00212b; */
+    grid-area: sugg;
     background-color: #032934;
     margin: 30px 0 0 0;
     padding: 20px;
@@ -229,7 +230,236 @@ $opciones:(
 }
 /*Fin Extend*/
 
+
+
+/*Inicio lenguages*/
+.lang-grid {
+    display: grid;
+    grid-template-areas: 
+    "aside main"
+    "aside main"
+    "aside sugg";
+    grid-template-columns: 1fr 4fr;
+    padding: 0px;
+    margin: 0px;
+}
+aside {
+    grid-area: aside;
+    display: inline-block;
+    background-color: #043341;
+    font-family: $font-1;
+    box-shadow: -20px 0px 70px rgba(2, 38, 49, 0.8) inset;
+}
+.indice-resp {
+    display: none;
+}
+.main-leng-container {
+    grid-area: main;
+    background-color: #063541;
+    color: $white;
+    padding-right: 2em;
+    padding-left: 2em;
+
+    div {
+        width: 200px;
+        height: 300px;
+        margin: 0 auto;
+
+        img {
+            width: 200px;
+            margin-top: 2em;
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: 80px;
+        margin: 20px;
+    }
+    h4 {
+        font-size: 1.5rem;
+        color: #7a01b3;
+        text-align: center;
+    }
+    .iframes {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        padding: 0.5em;
+
+        iframe {
+            width: 100%;
+        }
+    }
+    a {
+        list-style: none;
+        color: #1D973B;
+    }
+    //variables código
+    $maymen: #343738;
+    $etiq: #044981;
+    $atrib: #65717a;
+    $asd: #218383;
+    $clr: #cfcfcf;
+    .bracket {
+        padding: 0.2em;
+        border-radius: 2px;
+        background-color: black;
+        color: $clr;
+        font-family: $font-1;
+    }
+    .code {
+        width: 100%;
+        max-height: 200px;
+        overflow: auto;
+        background-color: #011f29;
+        border-left: 4px solid #39399B;
+        border-radius: 2px;
+        font-family: $font-1;
+
+        .vl {
+            color: $asd;
+        }
+        .at {
+            color: $atrib;
+        }
+        .et {
+            color: $etiq;
+        }
+        .mm {
+            color: $maymen;
+        }
+        .tx {
+            color: $clr;
+        }
+        
+    }
+}
+
+
+
+.indice {
+    padding: 30px;
+
+    p {
+        color: #36a5c7;
+        font-size: 3rem;
+    }
+    ul {
+        list-style-type:square;
+
+        li a {
+            color: #8b05c9;
+            font-size: 1.6rem;
+            text-decoration: none;
+
+            &:hover {
+                color: $nav-color;
+            }
+        }
+    }
+}
+/*Fin Lenguages*/
+
+
+
+/*Inicio Contacto*/
+.contacto section {
+    background-color: #002b36;
+}
+.contacto-title {
+    text-align: center;
+    padding: 20px;
+
+    h3 {
+        font-size: 2rem;
+        color: #7a01b3;
+        margin: 10px;
+    }
+    p {
+        font-size: 1rem;
+        color: $white;
+
+        a {
+            text-decoration: none;
+            color: #1D973B;
+        }
+    }
+}
+.contacto-form {
+    background-color: #002b36;
+    padding-bottom: 1em;
+
+    form {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: $font-1;
+
+        label {
+            display: inline-block;
+            width: 20%;
+            margin: 5px;
+            color: $white;
+        }
+        input {
+            display: inline-block;
+            width: 74%;
+            background-color: #063541;
+            color: #1D973B;
+        }
+    }
+    textarea {
+        max-width: 400px;
+        width: 100%;
+        background-color: #063541;
+        color: #1D973B;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .enviar {
+        width: 101%;
+        height: 50px;
+        background-color: #330647;
+        color: white;
+        font-size: 20px;
+    }
+}
+/*Fin Contacto*/
+
+
+
+/*Inicio Construcción*/
+.construccion {
+    background-color: $bg-color;
+    padding: 3rem;
+
+    h2 {
+        color: $white;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    h4 {
+        color: #1D973B;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    div {
+        margin: 0 auto;
+        width: 300px;
+        
+        img {
+            width: 280px;
+        }
+    }
+}
+/*Fin Construcción*/
+
+
+
+
+
 @media only screen and (max-width: 768px) {
+    //Inicio index
     .banner_logos {
         display: none;
         visibility: none;
@@ -259,4 +489,70 @@ $opciones:(
             padding-left: 10%;
         }
     }
+    //Fin index
+    //Inicio lenguages
+    .lang-grid {
+        grid-template-areas: 
+        "aside"
+        "main"
+        "sugg";
+        grid-template-columns: 1fr;
+    }
+    .indice {
+        display: none;
+    }
+    .indice-resp {  
+        position: sticky;
+        top: 0;      
+        display: block;
+        float: right;
+        width: 100%;
+        height: 3em;
+
+        img {
+            width: 2.5em;
+            float: right;
+            margin: 0.3em;
+        }
+
+        input {
+            display: none;
+        }
+        p {
+            color: #36a5c7;
+            display: inline;
+            float: left;
+            font-size: 2rem;
+            padding: 0.1em;
+        }
+        input:checked ~ .submenu{
+            right: 0;
+            display: block;
+            position: absolute !important;
+        }
+    }
+    .submenu {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        right: -100%;
+        transition: all .5s;
+        background-color: #043341;
+        margin-top: 3em;
+
+        li {
+            list-style-type: none;
+            text-align: center;
+            font-size: 1.2rem;
+
+            a {
+                color: $nav-color;
+                
+            }
+        }
+    }
+    //Fin lenguages
+    //Inicio contacto
+
+    //Fin contacto
 }
